@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 1;
+}
+body { 
+    overflow-x: hidden;
+}
+#container { 
+    display: flex;
+    flex-direction: column;
+    gap: 150px
+}
+.lheader {
+    background-image: url(photos/headback.png);
+    background-position: center;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px 50px 0 30px; /*nakss hna fi responsive */ 
+    color: white;
+    opacity: 1;
+}
+header .logo a img {
+    width: 113px; /* hna tani badl width */ 
+    height: 145px;
+}
+header ul{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 100px ; /* nakss gap */ 
+    padding : 10px 1px 10px 0;
+    background-color: #30586B94;
+    border-radius: 40px;
+    height: 79px;
+}
+header ul li a {
+    font-size: 28px; /* font  size */ 
+    color: black;
+    font-weight: 500;
+}
+header ul li:first-child{
+    margin-left: 80px; /* nakss maring*/
+}
+header ul li:last-child{
+    margin-right: 80px;
+}
+header span { 
+    font-size: 28px; /* font size */ 
+    font-weight: 500;
+}
+.infos { 
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px; /* nakss padding w font size */
+    color: white;
+    opacity: 1;
+}
+.discover {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 7.7em;
+    opacity: 2;
+}
+.discover h1 a{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 10%;
+    z-index: 50;
+    transition: 1s;
+    color: white;
+}
+#crclazbi{
+    content: '';
+    position: absolute;
+    translate: -110px 0;
+    width: 70px;
+    height: 70px;
+    background-color: #365531;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: -1;
+}
+.discover i{ 
+    font-size: 40px;
+}
+.discover h1 a:hover { 
+    cursor: pointer;
+    margin: 20px;
+}
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0px 50px 0px 100px;
+}
+.aboutusinfo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.ainfos { 
+    width: 628px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 110px;
+}
+.hhh { 
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.iinfos i {
+    font-size: 18px;
+    color : #88A61C;
+}
+.ourservice {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 80px;
+    padding: 0px 50px 0px 120px;
+}
+.ourserviceicons { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.ourserviceoneicon { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    text-align: center;
+    gap: 20px;
+
+}
+.Destination{ 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 80px;
+    padding: 0px 50px 0px 120px;
+}
+.destinationnavbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600px;
+}
+.destinationnavbar span { 
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.destinationnavbar nav { 
+    width: 55%;
+    border-bottom: 5px solid #EAEAEA;
+    padding: 0;
+    margin: 0;
+}
+.destinationnavbar ul {
+    margin: -5px;
+}
+.destinationnavbar ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+.destinationcards { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.destinationonecard {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 40px;
+    width: 360px;
+    box-shadow: 0 4px 4px 0 #00000059;
+}
+.destinationcardimage {
+    background-image: url(photos/Rectangle\ 74.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 360px;
+    height: 242px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 25px;
+
+}
+.destinationcardimage i {
+    z-index: 50;
+    color: white;
+    font-size: 32px;
+    font-weight:light;
+}
+.destinationcardinfo { 
+    padding: 22px 40px;
+    display: flex;
+    flex-direction: column;
+    gap : 15px
+}
+.destinationcardsnavbar{ 
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.destinationcardsnavbar ul{ 
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.destinationnavactive { 
+    color: white;
+}
+.destinationnavactive::before {
+    content: '';
+    width: 65px;
+    height: 65px;
+    translate: -25px -14px ;
+    position: absolute;
+    background-color: #88A61C;
+    border-radius: 50%;
+    z-index: -1;
+}
+#mid-card { 
+    background-image: url(photos/Rectangle\ 74\ \(1\).png);
+}
+#right-card {
+    background-image: url(photos/Rectangle\ 74\ \(2\).png);
+}
+.stayintouch { 
+    width: 95%;
+    margin: auto;
+    background-color: #365531;
+    border-radius: 40px;
+    padding: 130px 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    grid-template-columns: 1.2fr 3fr;
+}
+.stayinytouchinfo { 
+    color: white;
+    width: 28%;
+}
+.stayintouchbutton :first-child{ 
+    border-radius: 20px 0 0 20px;
+    padding: 10px 200px 10px 50px;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+}
+.stayintouchbutton :first-child::placeholder{
+    color: #889DB057;
+}
+.stayintouchbutton :last-child { 
+    border-radius: 0 20px 20px 0;
+    background-color: #947C66;
+    padding: 10px 40px 10px 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: none;
+}
+.stayintouchbutton :last-child:hover { 
+    cursor: pointer;
+}
+/*tours css*/ 
+.tours { 
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+}
+.toursinfo {
+    padding: 0px 50px 0px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 35%;
+}
+.tourscards { 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+}
+.tourscard { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.tourscardicons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5px;
+}
+.tourscardicons i {
+    z-index: 50;
+    color: white;
+    font-size: 32px;
+    font-weight:light;
+}
+.tourscard { 
+    background-image: url(photos/Rectangle\ 76.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 634px;
+    height: 470px;
+    padding: 25px;
+}
+.tourscard { 
+
+    border-radius: 40px;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.price p { 
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.price h1 { 
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+.tourscardinfo { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+}
+.tourscardiinfo { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: start;
+}
+.tourscardinfo h1{ 
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+.tourscardinfo a { 
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.tourscardinfo i { 
+    color: white;
+}
+#deactiveleft { 
+    translate: -50% 0;
+    opacity: 0.6;
+    scale: 0.8;
+    background-image: url(photos/Rectangle\ 77.png);
+}
+#deactiveright { 
+    background-image: url(photos/Rectangle\ 78.png);
+    translate: 50% 0;
+    opacity: 0.6;
+    scale: 0.8;
+}
+.ta7rak { 
+    margin: auto;
+    margin-top: 50px;
+}
+.ta7rak span{ 
+    font-size: 28px;
+    padding: 0 40px;
+}
+
+.ta7rak span::before { 
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #D9D9D9;
+    z-index: -1000;
+    translate: -20px -11px;
+}
+.contactus { 
+    padding: 0px 50px 0px 120px;
+    margin-bottom: 200px;
+}
+.contactus h1 { 
+    margin-bottom: 70px;
+}
+.contactuus {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contactusinfo { 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap :100px;
+}
+.contactusinfo p { 
+font-size: 25px;
+font-weight: 400;
+}
+.contactusbutton :first-child{ 
+    border-radius: 20px 0 0 20px;
+    padding: 10px 200px 10px 50px;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid #889DB057;
+}
+.contactusbutton :first-child::placeholder{
+    color: #889DB057;
+}
+.contactusbutton :last-child { 
+    border-radius: 0 20px 20px 0;
+    background-color: #947C66;
+    padding: 10px 40px 10px 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: 1px solid #889DB057;
+}
+.contactusbutton :last-child:hover { 
+    cursor: pointer;
+}
+.contactusinfoss {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.contactusinfoss div i { 
+    font-size: 20px;
+}
+.contactusinfoss div { 
+    display: flex;
+    gap: 23px;
+}
+.contactusinfoss div span { 
+    font-size: 20px;
+    font-weight: 400;
+}
+footer { 
+    background-color: #365531;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: start;
+    padding: 40px 80px;
+}
+footer nav ul {
+    padding: 50px 0;
+    display: flex;
+    gap: 70px;
+}
+footer nav ul li a{ 
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.lastonee { 
+    width: 100%;
+    gap: 60px;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+
+}
+.lastonee p { 
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
